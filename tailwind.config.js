@@ -12,6 +12,7 @@ export default {
         'bgPColor': '#4A4A52',
         'bgBColor': '#FF6A1A',
         'btColor': '#A6A6A6',
+        'LogColor': '#E5E5E5',
         
       },
       fontFamily: {

@@ -7,6 +7,7 @@ import Button from './Button'
 import { Link } from 'react-router-dom'
 import { FaHeart,FaShoppingCart } from "react-icons/fa";
 import Heading from './Heading'
+import User from './User'
 
 const Navbar = () => {
   return (
@@ -14,7 +15,7 @@ const Navbar = () => {
         <Container >
                 <Flex className={'justify-start sticky top-0 pt-3'}>
                         <div className="w-[30%] ">
-                        <Image ImgSrc={Logo} className={'w-[200px]'}/>
+                       <Link to='/'><Image ImgSrc={Logo} className={'w-[200px]'}/></Link> 
                         </div>
                         <div className="w-[50%] ">
                                 <ul className='font-regular text-[14px] font-qus text-bgPColor'>
@@ -41,7 +42,8 @@ const Navbar = () => {
                                         </Flex>
                                         </div>
                                         <div className="w-[40%]">
-                                        <Button btnText={'Sine In'} className={'text-white text-[14px] border border-b-gray-300 rounded-md translate-y-[-50%] ml-2 mt-3 pl-2 pr-2'}/>
+                                        {/* <Button btnText={'Sine In'} className={'text-white text-[14px] border border-b-gray-300 rounded-md translate-y-[-50%] ml-2 mt-3 pl-2 pr-2'}/> */}
+                                        <User/>
                                         </div>
                                 </Flex>
                         </div>

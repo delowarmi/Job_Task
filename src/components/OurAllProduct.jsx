@@ -7,6 +7,7 @@ import Product from './Products'
 import orange from '../assets/Orange.png'
 import mastrd from '../assets/mastard.png'
 import Products from './Products'
+import { Link } from 'react-router-dom'
 
 
 const OurAllProduct = () => {
@@ -20,7 +21,7 @@ const OurAllProduct = () => {
 
                 <Flex className={'justify-between mt-6'}>
                         <Button btnText={'All'} className={'font-rub font-regular text-[18px] text-btColor py-1 px-6 border border-b-gray-500 rounded-lg group hover:bg-bgtColor hover:text-white'}/>
-                        <Button btnText={'Fruits'} className={'font-rub font-regular text-[18px] text-btColor py-1 px-6 border border-b-gray-500 rounded-lg group hover:bg-bgtColor hover:text-white'}/>
+                       <Link to='/Fruits'> <Heading as='h3' text={'Fruits'} className={'font-rub font-regular text-[18px] text-btColor py-1 px-6 border border-b-gray-500 rounded-lg group hover:bg-bgtColor hover:text-white'}/> </Link>
                         <Button btnText={'Vegetables'} className={'font-rub font-regular text-[18px] text-btColor py-1 px-6 border border-b-gray-500 rounded-lg group hover:bg-bgtColor hover:text-white'}/>
                         <Button btnText={'Salad'} className={'font-rub font-regular text-[18px] text-btColor py-1 px-6 border border-b-gray-500 rounded-lg group hover:bg-bgtColor hover:text-white'}/>
                         

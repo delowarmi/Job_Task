@@ -6,36 +6,12 @@ import Flex from './Flex'
 
 const Products = () => {
   return (
-    <div className=''>
+    <div>
         <Flex className={'justify-between pt-12 flex-wrap '}>
-        <Product
-        imgSrc={orange}
-        tittle='Orange'
-        Prize='12$'
-        weght='/kg'
-        addtocart='Add To Cart'
-        />
-        <Product
-        imgSrc={orange}
-        tittle='Orange'
-        Prize='12$'
-        weght='/kg'
-        addtocart='Add To Cart'
-        />
-        <Product
-        imgSrc={mustrd}
-        tittle='Mustard'
-        Prize='12$'
-        weght='/kg'
-        addtocart='Add To Cart'
-        />
-        <Product
-        imgSrc={orange}
-        tittle='Orange'
-        Prize='12$'
-        weght='/kg'
-        addtocart='Add To Cart'
-        />
+        <Product addtocart={'Add To Cort'}/>
+        <Product addtocart={'Add To Cort'}/>
+        <Product addtocart={'Add To Cort'}/>
+        <Product addtocart={'Add To Cort'}/>
       </Flex>
     </div>
   )
