@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom'
 
 const OurAllProduct = () => {
   return (
-    <div className='py-[100px]'>
+    <div className='py-[100px] bg-white'>
     <Container >
         <div className="w-[467px] mx-auto text-center">
                 <Heading as={'h3'} text={'Our Products'} className='font-rub font-medium text-[20px] text-bgtColor'/>

@@ -8,6 +8,8 @@ import { FcGoogle } from "react-icons/fc";
 import { FaFacebookF } from "react-icons/fa6";
 import Register from './Register';
 import { RxCross2 } from "react-icons/rx";
+
+
 const User = () => {
 const [hidden, setHidden] = useState(false);
   return (
@@ -24,7 +26,7 @@ const [hidden, setHidden] = useState(false);
                   <div className='bg-white  w-[400px] absolute right-[400px] top-[150px] rounded-md py-8 px-10 '>
                        
                        <div onClick={() => setHidden(!hidden)}>
-                       <RxCross2  className='absolute top-4 right-4 text-[20px]' onClick={() => setHidden(!hidden)} />
+                       <RxCross2  className='absolute top-4 right-4 text-[24px]' onClick={() => setHidden(!hidden)} />
                         </div>
 
                           
@@ -57,17 +59,48 @@ const [hidden, setHidden] = useState(false);
                                 <div>
                                         <Flex className={'justify-center mt-3'}>
                                                 <Heading as={'p'} text={'Don’t have an account?'} className='font-rub font-semibold text-[14px] text-bgHColor'/>
-                                                <Link> <Register/> </Link>
+                                                
+                                                
+
+<>{/* You can open the modal using document.getElementById('ID').showModal() method */}
+ <button className="bg-white" onClick={()=>document.getElementById('my_modal_3').showModal()}><Heading as={'h4'} text={" Sing Up "} className='font-rub font-semibold text-[14px] text-orange-600 ' /></button>
+ <dialog id="my_modal_3" className="modal">
+   <div className="modal-box bg-white rounded-lg">
+     <form method="dialog" className='text-start'>
+       {/* if there is a button in form, it will close the modal */}
+       
+       <div onClick={() => setHidden(!hidden)}>
+                       <RxCross2  className='absolute top-4 right-4 text-[24px]' onClick={() => setHidden(!hidden)} />
+                        </div>
+       
+       <Heading as={'h4'} text={'Register'} className='font-rub font-semibold text-[32px] text-center'/>
+                        <div>
+                        <label for="uname"><b className=' pl-3 text-bgHColor'>Full Name</b></label> <br/>
+                        <input type="text" className='border border-InfoColor className mt-2 p-2 bg-white rounded-lg w-full' placeholder="Enter Your Name" name="uname"required></input>
+                        </div>
+                        <div>
+                        <label for="uname"><b className=' pl-3 text-bgHColor'>Email</b></label> <br/>
+                        <input type="text" className='border border-InfoColor className mt-2 p-2 bg-white rounded-lg w-full' placeholder="Enter Your Email" name="uname"required></input>
+                        </div>
+                        <div className='pt-6 '>
+                        <label for="uname"><b className='pl-3 pb-2 text-bgHColor'>Password</b></label> <br/>
+                        <input type="text" className='border border-InfoColor className mt-2 p-2 bg-white rounded-lg w-full' placeholder="Enter Your Password" name="uname"required></input>
+                       </div>
+     </form>
+    
+   </div>
+ </dialog></>
                                         </Flex>
+                                </div>
                                 </div>
                                 
                         </div>
-                  </div>
                  )}
                 </Flex>
-        {/* </OutsideClickHandler> */}
-    </div>
-  )
+                {/* </OutsideClickHandler> */}
+        </div>
+    
+)
 }
 
 export default User

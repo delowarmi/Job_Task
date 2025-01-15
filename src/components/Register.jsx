@@ -12,13 +12,12 @@ const [hidden, setHidden] = useState(false);
       <div className=' relative'>
         {/* <OutsideClickHandler onOutsideClick ={() => { setHidden(false); }} > */}
                 <Flex className={'items-center'}>
-                
-                <div onClick={() => setHidden(!hidden)}>
+                 <div onClick={() => setHidden(!hidden)}>
                 <Heading as={'h4'} text={" Sing Up "} className = 'font-rub font-semibold text-[14px] text-orange-600 cursor-pointer' onClick={() => setHidden(!hidden)} />
                 </div>
                 {hidden && (
                   <div className='bg-white  w-[400px] absolute right-[400px] top-[150px] rounded-md py-8 px-10 '>
-                        <Heading as={'h4'} text={'Login'} className='font-rub font-semibold text-[32px] text-center'/>
+                        <Heading as={'h4'} text={'Register'} className='font-rub font-semibold text-[32px] text-center'/>
                         <div className='pt-6'>
                         <label for="uname"><b className=' pl-3 text-bgHColor'>Full Name</b></label> <br/>
                         <input type="text" className='border border-InfoColor className mt-2 p-2 bg-white rounded-lg w-full' placeholder="Enter Your Name" name="uname"required></input>
